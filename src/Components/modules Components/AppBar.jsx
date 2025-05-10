@@ -47,7 +47,6 @@ function AppBarr() {
             alignItems: "center",
           }}
         >
-          {/* بخش سمت چپ */}
           <Box sx={{ display: "flex", alignItems: "center", color: "black" }}>
             <EngineeringIcon
               sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
@@ -70,8 +69,6 @@ function AppBarr() {
               Salidorj
             </Typography>
           </Box>
-
-          {/* بخش سمت راست */}
           <Box sx={{ display: { xs: "none", md: "flex" }, gap: 3 }}>
             {pages.map((page) => (
               <Button

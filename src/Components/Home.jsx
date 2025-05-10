@@ -1,12 +1,13 @@
 import React from "react";
 import AppBarr from "./modules Components/Appbar";
 import { Box, Container, Avatar, Stack, Typography, Button } from "@mui/material";
+import { CardItemHome } from "./modules Components/CardItemHome";
 
 export const Home = () => {
   return (
-    <Box>
+    <Box sx={{backgroundColor:"white"}}>
       <AppBarr />
-      <Box sx={{ backgroundColor: "whitesmoke", height: "525px" , display: "flex", alignItems: "center"}}>
+      <Box sx={{ backgroundColor: "white", height: "525px" , display: "flex", alignItems: "center"}}>
         <Container maxWidth="md" sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <Box sx={{padding: 0}}>
             <Stack sx={{ display: "flex" }}>
@@ -73,6 +74,7 @@ export const Home = () => {
           </Stack>
         </Container>
       </Box>
+      <CardItemHome />
     </Box>
   );
 };
