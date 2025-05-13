@@ -1,15 +1,37 @@
 import React from "react";
 import AppBarr from "./modules Components/Appbar";
-import { Box, Container, Avatar, Stack, Typography, Button } from "@mui/material";
+import {
+  Box,
+  Container,
+  Avatar,
+  Stack,
+  Typography,
+  Button,
+} from "@mui/material";
 import { CardItemHome } from "./modules Components/CardItemHome";
+import { ItemCard } from "./modules Components/ItemCard";
 
 export const Home = () => {
   return (
-    <Box sx={{backgroundColor:"white"}}>
+    <Box sx={{ backgroundColor: "white" }}>
       <AppBarr />
-      <Box sx={{ backgroundColor: "white", height: "525px" , display: "flex", alignItems: "center"}}>
-        <Container maxWidth="md" sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <Box sx={{padding: 0}}>
+      <Box
+        sx={{
+          backgroundColor: "white",
+          height: "525px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Container
+          maxWidth="md"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Box sx={{ padding: 0 }}>
             <Stack sx={{ display: "flex" }}>
               <Typography
                 fontFamily="DM Serif Display, serif "
@@ -33,27 +55,32 @@ export const Home = () => {
                 component="p"
                 maxWidth="450px"
                 sx={{
-                    display: { xs: "none", md: "flex" },
-                    fontWeight: "200",
-                    fontSize: "16px",
-                    color: "#21243D",
-                    mt:"30px"
-                  }}
+                  display: { xs: "none", md: "flex" },
+                  fontWeight: "200",
+                  fontSize: "16px",
+                  color: "#21243D",
+                  mt: "30px",
+                }}
               >
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
               </Typography>
-              <Button variant="contained" disableElevation sx={{backgroundColor:"#FF6464",
-                width: "250px",
-                height:"47px",
-                mt:"30px",
-                display: "block",
-                fontSize:"20px",
-                fontWeight: "300",
-                letterSpacing: "1px",
-                fontFamily: "DM Serif Display, serif ",
-              }}>
+              <Button
+                variant="contained"
+                disableElevation
+                sx={{
+                  backgroundColor: "#FF6464",
+                  width: "250px",
+                  height: "47px",
+                  mt: "30px",
+                  display: "block",
+                  fontSize: "20px",
+                  fontWeight: "300",
+                  letterSpacing: "1px",
+                  fontFamily: "DM Serif Display, serif ",
+                }}
+              >
                 Download Resume
               </Button>
             </Stack>
@@ -75,6 +102,23 @@ export const Home = () => {
         </Container>
       </Box>
       <CardItemHome />
+      <Box sx={{ height: "1000px", backgroundColor: "#C0C0C0" }}>
+        <Container maxWidth="md">
+          <Typography
+            variant="h5"
+            component="h3"
+            sx={{ paddingTop: "40px", paddingBottom: "40px" }}
+          >
+            Featured works
+          </Typography>
+          <ItemCard />
+          <br />
+          <ItemCard />
+          <br />
+          <ItemCard />
+          <br />
+        </Container>
+      </Box>
     </Box>
   );
 };
