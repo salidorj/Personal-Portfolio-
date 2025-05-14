@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { CardItemHome } from "./modules Components/CardItemHome";
 import { ItemCard } from "./modules Components/ItemCard";
+import { Footer } from "./modules Components/Footer";
 
 export const Home = () => {
   return (
@@ -102,7 +103,7 @@ export const Home = () => {
         </Container>
       </Box>
       <CardItemHome />
-      <Box sx={{ height: "1000px", backgroundColor: "#C0C0C0" }}>
+      <Box sx={{ height: "1000px", backgroundColor: "#FFFFFF" }}>
         <Container maxWidth="md">
           <Typography
             variant="h5"
@@ -119,6 +120,7 @@ export const Home = () => {
           <br />
         </Container>
       </Box>
+      <Footer />
     </Box>
   );
 };
