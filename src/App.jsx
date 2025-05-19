@@ -1,9 +1,12 @@
+import { Box } from "@mui/material";
 import { Layout } from "./Components/Layout";
 
 function App() {
-  return <div>
-    <Layout />
-  </div>;
+  return (
+    <Box>
+      <Layout />
+    </Box>
+  );
 }
 
 export default App;

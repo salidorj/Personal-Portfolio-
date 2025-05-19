@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { CardItemHome } from "./modules Components/CardItemHome";
 import { ItemCard } from "./modules Components/ItemCard";
-import { Footer } from "./modules Components/Footer";
+import { FooterBar } from "./modules Components/FooterBar";
 
 export const Home = () => {
   return (
@@ -120,7 +120,7 @@ export const Home = () => {
           <br />
         </Container>
       </Box>
-      <Footer />
+      <FooterBar />
     </Box>
   );
 };
