@@ -13,7 +13,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const FooterBar = () => {
   return (
-    <Box sx={{ textAlign: "center" }}>
+    <Box sx={{ textAlign: "center", backgroundColor:"white" }}>
       <Box
         component="span"
         sx={{ display: "flex", justifyContent: "space-around" }}
